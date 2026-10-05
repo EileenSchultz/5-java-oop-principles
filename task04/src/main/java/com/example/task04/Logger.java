@@ -30,11 +30,11 @@ public class Logger {
         return logger;
     }
 
-    public void addHandler(MessageHandler handler){
+    public void addHandler(MessageHandler handler) {
         handlers.add(handler);
     }
 
-    public void removeHandler(MessageHandler handler){
+    public void removeHandler(MessageHandler handler) {
         handlers.remove(handler);
     }
 
@@ -65,7 +65,8 @@ public class Logger {
         String logMessages = logMessage(msgLevel, message);
 
         for (MessageHandler handler : handlers) {
-            handler.handler(logMessages); }
+            handler.handler(logMessages);
+        }
     }
 
 

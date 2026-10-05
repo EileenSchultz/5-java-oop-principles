@@ -32,7 +32,7 @@ public class Milliseconds implements TimeUnit {
     }
 
     @Override
-    public long getHours(){
+    public long getHours() {
         return toHours();
     }
 }

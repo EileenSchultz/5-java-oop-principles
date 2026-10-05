@@ -35,6 +35,7 @@ public interface TimeUnit {
      * @return количество часов в текущем интервале
      */
     long toHours();
+
     long getHours();
 
 
